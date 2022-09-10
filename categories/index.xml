@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Just a quasi-normal guy</title>
+    <title>Categories on 金月</title>
     <link>https://quasinormalguy.github.io/categories/</link>
-    <description>Recent content in Categories on Just a quasi-normal guy</description>
+    <description>Recent content in Categories on 金月</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <copyright>Copyright © 2022</copyright>
     
 	<atom:link href="https://quasinormalguy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
