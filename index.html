@@ -10,7 +10,7 @@
 	<meta name="generator" content="Hugo 0.102.3" />
 	
 	
-	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 	
 
 	
@@ -22,13 +22,41 @@
 
 	
 	
+<link rel="shortcut icon" href="img/bh-disk.jpg" type="image/png" />
+
 	
 
 	
-	<link rel="alternate" href="/index.xml" type="application/rss+xml" title="Just a quasi-normal guy">
-	<link rel="feed" href="/index.xml" type="application/rss+xml" title="Just a quasi-normal guy">
 	
 	
+	
+	
+	
+
+
+
+<link rel="stylesheet" href='https://quasinormalguy.github.io/lib/katex.min.css' crossorigin="anonymous">
+
+
+<script defer src='https://quasinormalguy.github.io/lib/katex.min.js' crossorigin="anonymous"></script>
+
+
+<script defer src='https://quasinormalguy.github.io/lib/contrib/auto-render.min.js'
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
 	
 	
 	
@@ -52,6 +80,56 @@
 	
 	
 	
+	<style type="text/css" media="screen, print">
+		@font-face {
+			font-family: "FancyTitleFont";
+			font-style: normal;
+			font-display: swap;
+			src: url('https://quasinormalguy.github.io/fonts/mononoki.woff2') format('woff2'),
+				url('https://quasinormalguy.github.io/fonts/mononoki.woff') format('woff');
+		}
+		 
+		  
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 300;
+			font-display: swap;
+			src: local('Noto Serif CJK SC Light'), local('NotoSerifCJK-Light'),
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff2') format('woff2'),
+				 
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-300.woff') format('woff');
+			 
+		}
+
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: local('Noto Serif CJK SC'), local('NotoSerifCJK-Regular'),
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff2') format('woff2'),
+				 
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-regular.woff') format('woff');
+			 
+		}
+
+		 
+		@font-face {
+			font-family: 'Noto Serif CJK SC';
+			font-style: normal;
+			font-weight: 500;
+			font-display: swap;
+			src: local('Noto Serif CJK SC Medium'), local('NotoSerifCJK-Medium'),
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff2') format('woff2'),
+				 
+				url('https://quasinormalguy.github.io/fonts/noto-serif-sc-v7-latin_chinese-simplified-500.woff') format('woff');
+			 
+		}
+	</style>
+	
 </head>
 
 <body class="bg-gray-100 text-gray-700 font-sans">
@@ -67,11 +145,52 @@
 	<ul class="font-serif flex-grow-0 flex justify-between flex-wrap md:flex-col">
 	
 	
+	<li class="px-1 md:px-0">
+		<a href="/post/" title="Posts page" >
+			Posts
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/categories/" title="Categories page" >
+			Categories
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/tags/" title="Tags page" >
+			Tags
+		</a>
+	</li>
+	
+	<li class="px-1 md:px-0">
+		<a href="/about/" title="About page" >
+			About
+		</a>
+	</li>
+	
+	
+	
+	
+	<div id="fastSearch" class="m-0">
+		<input id="searchInput" type="text" size=10 
+			class="bg-gray-100 focus:outline-none border-b border-gray-100 focus:border-eucalyptus-300 md:text-right
+			placeholder-java-500 min-w-0 max-w-xxxs"
+			placeholder="search" />
+		<ul id="searchResults" class="bg-gray-200 px-2 divide-y divide-gray-400">
+		</ul>
+	</div>
+	
 </ul>
 			</div>
 		</header>
 		<main role="main" class="w-full md:w-3/5 xl:w-1/2 max-w-3xl order-2 md:order-2 min-h-70vh pt-2 pb-4">
 			
+
+<div class="font-serif text-medium-red-violet-400 pt-3">
+	Personal website of Swarnim.
+</div>
+<hr  class="pt-2"/>
 
 
 <div>
@@ -166,6 +285,9 @@
 
 <script src="/dist/app.js"></script>
 
+
+<script src="/lib/fuse.min.js"></script> 
+<script src="/lib/fastsearch.js"></script>
 
 	</div>
 </body>
